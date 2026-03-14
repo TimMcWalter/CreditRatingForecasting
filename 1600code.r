@@ -217,15 +217,15 @@ control <- trainControl(
 set.seed(600)
 tunegrid <- expand.grid(.mtry = 1:(ncol(df_model) - 1))
 
-rf_gridsearch <- train(
-  Fitch.Long.Term.Issuer.Default.Rating ~ .,
-  data = df_model,
-  method = "rf",
-  metric = "Accuracy",
-  tuneGrid = tunegrid,
-  trControl = control,
-  ntree = 500
-)
+#rf_gridsearch <- train(
+#  Fitch.Long.Term.Issuer.Default.Rating ~ .,
+#  data = df_model,
+#  method = "rf",
+#  metric = "Accuracy",
+#  tuneGrid = tunegrid,
+#  trControl = control,
+#  ntree = 500
+#)
 
-print(rf_gridsearch)
-plot(rf_gridsearch)
+#print(rf_gridsearch)
+#plot(rf_gridsearch)

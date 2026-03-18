@@ -164,7 +164,7 @@ if (length(high_card_factors) > 0) {
 }
 
 str(df_model)
-
+colnames(df_model)
 # =========================
 # 7) Random Forest models
 # =========================

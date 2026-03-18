@@ -26,7 +26,7 @@ df$Entries_missing_Accounting <- rowSums(is.na(df))
 # 2) Add macro data
 # =========================
 snapshot_year <- 2023
-
+#snapshot year is willingly pushed back so that we dont have data leakage or "look back" bias
 df <- df %>%
   mutate(
     country_iso2 = toupper(trimws(Cntry.Terrtry)),
